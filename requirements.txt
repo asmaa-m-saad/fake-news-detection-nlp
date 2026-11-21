@@ -1,0 +1,18 @@
+pandas
+numpy
+matplotlib
+seaborn
+wordcloud
+nltk
+scikit-learn
+gensim
+tensorflow
+torch
+transformers
+tqdm
+jupyter
+# web demo
+fastapi
+uvicorn
+jinja2
+python-multipart

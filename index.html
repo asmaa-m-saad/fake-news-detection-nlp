@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Fake News &amp; Sentiment Analysis</title>
+</head>
+<body style="font-family: Arial, sans-serif; max-width: 720px; margin: 24px auto; padding: 0 16px;">
+  <h1>Fake News &amp; Sentiment Analysis</h1>
+
+  <form method="post" action="/analyze">
+    <textarea name="text" rows="6" style="width: 100%;" placeholder="Paste a news article here..." required>{{ text or "" }}</textarea>
+    <br><br>
+    <button type="submit">Analyze</button>
+  </form>
+
+  {% if result %}
+  <hr>
+  <h2>Result</h2>
+  <p><strong>Fake News Prediction:</strong> {{ result.fake_news }}</p>
+  <p><strong>Sentiment:</strong> {{ result.sentiment }} (Confidence: {{ result.confidence }}%)</p>
+  {% endif %}
+</body>
+</html>
