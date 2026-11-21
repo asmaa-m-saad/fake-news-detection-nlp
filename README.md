@@ -59,5 +59,3 @@ The model weights (about 440 MB) are not stored in this repo because of GitHub's
 - Trained on English political news from a single dataset; it may not generalize to other topics or languages.
 - Automated fake news detection should support human fact-checking, not replace it.
 
-## Author
-Asmaa Mahmoud Saad: Faculty of Computer and Data Science, Alexandria University
